@@ -105,7 +105,7 @@
   
    
    /* Hobby icon */
-   .hero-icon{ position: absolute; top: 22%; width: clamp(100px, 128vw, 340px); z-index: 1;
+   .hero-icon{ position: absolute; top: 16%; width: clamp(100px, 128vw, 340px); z-index: 1;
      filter: drop-shadow(0 6px 24px rgba(0,0,0,0.25)); opacity: 0.95; }
      .hero-icon--left{
         left: 5%;
