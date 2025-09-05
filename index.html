@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hana Ahmed</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Anton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Optional decorative strips & rails (same vibe as last site) -->
+  <div class="top-strip" aria-hidden="true"></div>
+  <div class="side-rails" aria-hidden="true"></div>
+
+  <!-- ============================== -->
+  <!-- SCREEN 1 — HERO                -->
+  <!-- ============================== -->
+  <section id="hero" class="section snap" aria-label="Cover">
+    <!-- Background image is set via CSS (#hero::before) -->
+
+    <!-- NAME split left/right (behind portrait) -->
+    <!-- HANA EDIT HERE: change name text if needed -->
+    <h1 class="name-banner">
+      <span class="first">Hana</span>
+      <span class="last">Ahmed</span>
+    </h1>
+
+    <!-- Center portrait (PNG with transparent bg) -->
+    <!-- HANA EDIT HERE: replace file name if yours differs (e.g., hana_pfp.png) -->
+    <img class="portrait" src="./hana_pfp.png" alt="Portrait of Hana Ahmed" />
+
+    <!-- Hobby icon (tennis) -->
+    <!-- HANA EDIT HERE: change/remove racket image as you like -->
+    <img class="hero-icon hero-icon--left" src="./racket.png" alt="Tennis racket" />
+    <img class="hero-icon hero-icon--right" src="./Michigan.png" alt="Michigan logo" />
+
+    <!-- Role card: dark blue box, ~20% transparent (i.e., 80% opaque) -->
+    <!-- HANA EDIT HERE: edit the text inside .role-card -->
+    <div class="role-card">
+      <div class="role-title">CS @ University of Michigan</div>
+      <div class="role-meta">Backend • Data Systems • iOS (Swift)</div>
+    </div>
+  </section>
+
+  <!-- ============================== -->
+  <!-- SCREEN 2 — UM BANNER + IMAGES  -->
+  <!-- ============================== -->
+  <section id="um" class="section snap" aria-label="University of Michigan">
+    <div class="um-wrap">
+      <!-- UM banner -->
+      <div class="um-banner reveal">
+        <div class="um-wordmark">UNIVERSITY&nbsp;OF&nbsp;MICHIGAN</div>
+      </div>
+
+      <!-- 6-image gallery strip -->
+      <!-- HANA EDIT HERE: replace image_#.jpg files with your own -->
+      <div class="image-strip reveal" role="list">
+        <img src="./image_1.jpg" alt="Gallery image 1" role="listitem" />
+        <img src="./image_2.jpg" alt="Gallery image 2" role="listitem" />
+        <img src="./image_3.jpg" alt="Gallery image 3" role="listitem" />
+        <img src="./image_4.jpg" alt="Gallery image 4" role="listitem" />
+        <img src="./image_5.jpg" alt="Gallery image 5" role="listitem" />
+        <img src="./image_6.jpg" alt="Gallery image 6" role="listitem" />
+      </div>
+    </div>
+
+    <!-- Chips to jump to sections on Screen 3 -->
+    <nav class="options-bar reveal" aria-label="Quick links">
+      <a href="#projects">Projects</a>
+      <span class="dot" aria-hidden="true">•</span>
+      <a href="#experience">Experiences</a>
+      <span class="dot" aria-hidden="true">•</span>
+      <a href="#contact">Contact</a>
+    </nav>
+  </section>
+
+  <!-- ============================== -->
+  <!-- SCREEN 3 — PROJECTS / EXP / CT -->
+  <!-- ============================== -->
+  <section id="content" class="section snap" aria-label="Sections">
+    <div class="content-wrap">
+
+      <!-- -------- Projects -------- -->
+      <hr class="divider" />
+      <h2 id="projects" class="anchor">Projects</h2>
+
+      <!-- GitHub repo button -->
+      <!-- HANA EDIT HERE: paste your GitHub profile or portfolio repo -->
+      <a class="btn btn-github" href="https://github.com/hanahmed" target="_blank" rel="noopener">
+        View GitHub Repositories
+      </a>
+
+      <!-- Project links w/ descriptions -->
+      <!-- HANA EDIT HERE: duplicate .project-link blocks to add more projects -->
+      <div class="projects-list reveal">
+        <div class="project-link">
+          <a href="#" target="_blank" rel="noopener">Court Occupancy Tracker</a>
+          <p>Microservice + Redis queue + dashboard; handles 2k req/min (P95 120ms). </p>
+        </div>
+        <div class="project-link">
+          <a href="#" target="_blank" rel="noopener">Tennis Match Predictor</a>
+          <p>Scraped match stats → trained model → REST API; AUC 0.82; inference &lt;80ms.</p>
+        </div>
+      </div>
+
+      <!-- -------- Experience -------- -->
+      <hr class="divider" />
+      <h2 id="experience" class="anchor">Experiences</h2>
+
+      <!-- Resume link -->
+      <!-- HANA EDIT HERE: replace resume.pdf with your file name -->
+      <a class="btn btn-resume" href="./resume.pdf" target="_blank" rel="noopener">Download Resume (PDF)</a>
+
+      <!-- Experience list -->
+      <!-- HANA EDIT HERE: Replace Nordstrom example and/or duplicate .exp-item for more roles -->
+      <div class="exp-list reveal">
+
+        <!-- Example item -->
+        <article class="exp-item">
+          <div class="exp-logo">
+            <!-- Put your logo file here (PNG/SVG, ~80x80) -->
+            <img src="./nordstrom_logo.png" alt="Nordstrom logo">
+          </div>
+
+          <div class="exp-main">
+            <h3 class="exp-company">Nordstrom <span class="exp-badge">Internship</span></h3>
+            <div class="exp-title">Software Engineer Intern</div>
+            <p class="exp-desc">
+              Built and shipped features across the stack; collaborated with the team on code reviews,
+              testing, and performance improvements.
+            </p>
+            <div class="exp-location">Seattle, Washington, United States</div>
+          </div>
+
+          <div class="exp-dates">
+            <div class="exp-date-range">May 2025 – Aug 2025</div>
+            <div class="exp-duration">4 mos</div>
+          </div>
+        </article>
+
+        <!-- ====== TEMPLATE (copy from here down to </article>) ======
+        <article class="exp-item">
+          <div class="exp-logo">
+            <img src="./YOUR_LOGO_FILE.png" alt="Company logo">
+          </div>
+          <div class="exp-main">
+            <h3 class="exp-company">Company Name <span class="exp-badge">Internship</span></h3>
+            <div class="exp-title">Job Title</div>
+            <p class="exp-desc">
+              1–2 lines about the work you did and the impact (preferably with metrics).
+            </p>
+            <div class="exp-location">City, State (optional)</div>
+          </div>
+          <div class="exp-dates">
+            <div class="exp-date-range">Start – End</div>
+            <div class="exp-duration">X mos</div>
+          </div>
+        </article>
+        ====== TEMPLATE END ====== -->
+
+      </div>
+
+      <!-- -------- Contact -------- -->
+      <hr class="divider" />
+      <h2 id="contact" class="anchor">Contact</h2>
+
+      <div class="contact-grid reveal">
+        <!-- HANA EDIT HERE: email + LinkedIn -->
+        <button id="btnEmail"   class="btn btn-primary" type="button">Email Hana</button>
+        <button id="btnLinkedIn" class="btn btn-outline" type="button">View LinkedIn</button>
+      </div>
+
+      <hr class="divider" />
+    </div>
+  </section>
+
+  <!-- Optional bottom strip to mirror the top -->
+  <div class="bottom-strip" aria-hidden="true"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
